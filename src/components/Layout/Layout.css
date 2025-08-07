@@ -1,0 +1,17 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 64px; /* Account for fixed navbar - 16 * 4 = 64px */
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+  .main-content {
+    padding-top: 64px; /* Keep same for sm and up */
+  }
+}
